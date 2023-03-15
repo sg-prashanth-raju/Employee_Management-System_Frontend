@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = 'https://emp-backend.onrender.com';
+const BASE_URL = 'https://https-emp-backend-onrender-com.onrender.com';
 
 export default axios.create({
     baseURL: BASE_URL
