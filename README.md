@@ -7,7 +7,7 @@
 
 To run the project on your machine run the follwing commands in your terminal
 
-#Frontend
+# Frontend
 ```sh
 git clone https://github.com/sg-prashanth-raju/Employee_Management-System_Frontend
 cd Employee_Management-System_Frontend
@@ -15,10 +15,19 @@ npm install
 npm start
 ```
 
-#Backend
+# Backend
 ```sh
 git clone git clone https://github.com/sg-prashanth-raju/Employee_Management-System_Backend
 cd Employee_Management-System_Backend
 npm install
 npm run dev
 ```
+
+# The MERN application is deployed on [Render].
+- On registering a new user, you will be assigned a user role which is allowed to fetch and view employee details
+- For creating and editing employee details you need to have editor role. Credentials for editor role - Username:Naveen Password:N@veen123
+- For deleting employee you need to have admin role. Credentials for editor role - Username:Prashanth Password:Raju123
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen.
+
+   [Render]: <https://employeemanagementsystem-4qjp.onrender.com>
