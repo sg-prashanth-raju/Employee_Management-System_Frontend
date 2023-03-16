@@ -28,6 +28,5 @@ npm run dev
 - For creating and editing employee details you need to have editor role. Credentials for editor role - Username:Naveen Password:N@veen123
 - For deleting employee you need to have admin role. Credentials for editor role - Username:Prashanth Password:Raju123
 
-[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen.
-
+[//]: 
    [Render]: <https://employeemanagementsystem-4qjp.onrender.com>
