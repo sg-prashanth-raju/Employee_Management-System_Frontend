@@ -1,6 +1,7 @@
 import { AppBar, Toolbar, styled, Button } from '@mui/material';
 import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import useLogout from "../hooks/useLogout";
+import useRoleVerify from "../hooks/useRoleVerify";
 
 const Header = styled(AppBar)`
     background: #111111;
@@ -16,6 +17,7 @@ const Tabs = styled(NavLink)`
 const NavBar = () => {
     const navigate = useNavigate();
     const logout = useLogout();
+    const [roleVerify]   = useRoleVerify();
 
     const signOut = async () => {
         await logout();
@@ -27,7 +29,10 @@ const NavBar = () => {
             <Header position="static">
                 <Toolbar>
                     <Tabs to="/" exact>Home</Tabs>
-                    <Tabs to="add" exact>Add User</Tabs>
+                    {roleVerify(["Editor"]) ?
+                        <Tabs to="add" exact>Add Employee</Tabs> :
+                        <></>
+                    }
                     <Button variant="contained" color="primary" onClick={() => signOut()}>Logout</Button>
                 </Toolbar>
             </Header>
